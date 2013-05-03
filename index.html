@@ -17,6 +17,12 @@
   stroke: white;
 }
 
+.symbol {
+  fill: steelblue;
+  fill-opacity: .8;
+  stroke: #fff;
+}
+
 </style>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -47,6 +53,9 @@ var svg = d3.select("body").append("svg")
 var states = svg.append("g")
     .attr("id", "states")
     .call(zoom);
+var cities = svg.append("g")
+    .attr("class", "symbol")
+    .call(zoom);
 
 states.append("rect")
     .attr("class", "background")
@@ -55,6 +64,14 @@ states.append("rect")
 
 d3.json("data/states.geojson", function(json) {
   states.selectAll("path")
+      .data(json.features)
+    .enter().append("path")
+      .attr("d", path)
+      .on("click", click);
+});
+
+d3.json("data/brigade.geojson", function(json) {
+  cities.selectAll("path")
       .data(json.features)
     .enter().append("path")
       .attr("d", path)
