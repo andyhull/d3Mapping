@@ -72,7 +72,7 @@ d3.json("data/states.geojson", function(json) {
 
 d3.json("data/brigade.geojson", function(json) {
   cities.selectAll("path")
-      .data(json.features)
+      .data(json.features.filter(function(d) { return d.properties.brigade == 'Y'; }))
     .enter().append("path")
       .attr("d", path)
       .on("click", click);
