@@ -52,7 +52,7 @@ function ready(error, us, centroid) {
       .data(centroid.features.sort(function(a, b) { return b.properties.population - a.properties.population; }))
     .enter().append("path")
       .attr("class", "symbol")
-      .attr("d", path.pointRadius(function(d) { return radius(d.properties.population); }));
+      .attr("d", path.pointRadius(10));
 }
 function click(d) {
   var x, y, k;
