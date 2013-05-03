@@ -278,7 +278,7 @@
 ,
 { "type": "Feature", "id": 137, "properties": { "NAME": "Truth or Consequences", "LATITUDE": 33.133596414199999, "LONGITUDE": -107.25289555, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -107.25289555034631, 33.133596414211411 ] } }
 ,
-{ "type": "Feature", "id": 138, "properties": { "NAME": "Las Vegas", "LATITUDE": 35.597011941600002, "LONGITUDE": -105.222502687, "brigade": "Y", "Link": "http:\/\/www.vegashack.com\/" }, "geometry": { "type": "Point", "coordinates": [ -105.222502687382317, 35.597011941565071 ] } }
+{ "type": "Feature", "id": 138, "properties": { "NAME": "Las Vegas", "LATITUDE": 35.597011941600002, "LONGITUDE": -105.222502687, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -105.222502687382317, 35.597011941565071 ] } }
 ,
 { "type": "Feature", "id": 139, "properties": { "NAME": "Farmington", "LATITUDE": 36.7541506134, "LONGITUDE": -108.186094403, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -108.186094402889125, 36.754150613444665 ] } }
 ,
@@ -7802,7 +7802,7 @@
 ,
 { "type": "Feature", "id": 3899, "properties": { "NAME": "Reno", "LATITUDE": 39.529976012200002, "LONGITUDE": -119.820009605, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -119.820009604758468, 39.529976012218803 ] } }
 ,
-{ "type": "Feature", "id": 3900, "properties": { "NAME": "Las Vegas", "LATITUDE": 36.209997781399998, "LONGITUDE": -115.220006146, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -115.221952004694216, 36.211943640024295 ] } }
+{ "type": "Feature", "id": 3900, "properties": { "NAME": "Las Vegas", "LATITUDE": 36.209997781399998, "LONGITUDE": -115.220006146, "brigade": "Y", "Link": "http:\/\/www.vegashack.com\/" }, "geometry": { "type": "Point", "coordinates": [ -115.221952004694216, 36.211943640024295 ] } }
 ,
 { "type": "Feature", "id": 3901, "properties": { "NAME": "Elko", "LATITUDE": 40.832506326400001, "LONGITUDE": -115.761988568, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -115.761988567958511, 40.832506326351606 ] } }
 ,
