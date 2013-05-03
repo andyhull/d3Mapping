@@ -20,74 +20,42 @@
 <script src="http://d3js.org/queue.v1.min.js"></script>
 <script>
 
-var width = 380,
-    height = 300,
-    centered;
+var width = 960,
+    height = 500;
 
-var projection = d3.geo.albersUsa()
-    .scale(width)
-    .translate([width / 2, height / 2]);
-
-var radius = d3.scale.sqrt()
-    .domain([0, 1e6])
-    .range([0, 10]);
-
-var path = d3.geo.path();
-
-var zoom = d3.behavior.zoom()
-    .translate(projection.translate())
-    .scale(projection.scale())
-    .scaleExtent([height, 8 * height])
-    .on("zoom", zoom);
+var projection = d3.geo.mercator()
+    .center([0, 5 ])
+    .scale(900)
+    .rotate([-180,0]);
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-queue()
-    .defer(d3.json, "data/us.json")
-    .defer(d3.json, "data/brigade.geojson")
-    .await(ready);
+var path = d3.geo.path()
+    .projection(projection);
 
-function ready(error, us, centroid) {
-console.log(centroid);
-  svg.append("path")
-      .attr("class", "states")
-      .datum(topojson.object(us, us.objects.states))
+var g = svg.append("g");
+
+// load and display the World
+d3.json("us.json", function(error, topology) {
+    g.selectAll("path")
+      .data(topojson.object(topology, topology.objects.countries)
+          .geometries)
+    .enter()
+      .append("path")
       .attr("d", path)
-      .on("click", click);
+});
 
-var g = svg.append("g")
-    .attr("id", "states");
+// zoom and pan
+var zoom = d3.behavior.zoom()
+    .on("zoom",function() {
+        g.attr("transform","translate("+ 
+            d3.event.translate.join(",")+")scale("+d3.event.scale+")");
+        g.selectAll("path")  
+            .attr("d", path.projection(projection)); 
+  });
 
-
-  svg.selectAll(".symbol")
-      // .data(centroid.features.sort(function(a, b) { return b.properties.population - a.properties.population; }))
-      .data(centroid.features.filter(function(d) { return d.properties.brigade == 'Y'; }))
-    .enter().append("path")
-      .attr("class", "symbol")
-      .attr("d", path.pointRadius(10));
-}
-
-function click(d) {
-  var centroid = path.centroid(d),
-      translate = projection.translate();
-
-  projection.translate([
-    translate[0] - centroid[0] + width / 2,
-    translate[1] - centroid[1] + height / 2
-  ]);
-
-  zoom.translate(projection.translate());
-
-  svg.selectAll("path").transition()
-      .duration(1000)
-      .attr("d", path);
-}
-
-function zoom() {
-  projection.translate(d3.event.translate).scale(d3.event.scale);
-  svg.selectAll("path").attr("d", path);
-}
+svg.call(zoom)
 
 </script>
