@@ -87,7 +87,7 @@ function click(d) {
 
 function zoom() {
   projection.translate(d3.event.translate).scale(d3.event.scale);
-  states.selectAll("path").attr("d", path);
+  svg.selectAll("path").attr("d", path);
 }
 
 </script>
