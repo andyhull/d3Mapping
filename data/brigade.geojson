@@ -7738,7 +7738,7 @@
 ,
 { "type": "Feature", "id": 3867, "properties": { "NAME": "Bismarck", "LATITUDE": 46.808317280200001, "LONGITUDE": -100.783316286, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -100.783316285997529, 46.808317280151641 ] } }
 ,
-{ "type": "Feature", "id": 3868, "properties": { "NAME": "Honolulu", "LATITUDE": 21.306876443499998, "LONGITUDE": -157.857997886, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -157.859943744773602, 21.308822302073967 ] } }
+{ "type": "Feature", "id": 3868, "properties": { "NAME": "Honolulu", "LATITUDE": 21.306876443499998, "LONGITUDE": -157.857997886, "brigade": "Y", "Link": null }, "geometry": { "type": "Point", "coordinates": [ -157.859943744773602, 21.308822302073967 ] } }
 ,
 { "type": "Feature", "id": 3869, "properties": { "NAME": "Hilo", "LATITUDE": 19.699997781299999, "LONGITUDE": -155.090027305, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -155.090027305094907, 19.699997781345239 ] } }
 ,
@@ -7846,7 +7846,7 @@
 ,
 { "type": "Feature", "id": 3921, "properties": { "NAME": "Omaha", "LATITUDE": 41.2400008332, "LONGITUDE": -96.009990073400004, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -96.00999007341332, 41.240000833189249 ] } }
 ,
-{ "type": "Feature", "id": 3922, "properties": { "NAME": "Tulsa", "LATITUDE": 36.120003274600002, "LONGITUDE": -95.930020794399994, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -95.930020794441603, 36.120003274575012 ] } }
+{ "type": "Feature", "id": 3922, "properties": { "NAME": "Tulsa", "LATITUDE": 36.120003274600002, "LONGITUDE": -95.930020794399994, "brigade": "Y", "Link": null }, "geometry": { "type": "Point", "coordinates": [ -95.930020794441603, 36.120003274575012 ] } }
 ,
 { "type": "Feature", "id": 3923, "properties": { "NAME": "Oklahoma City", "LATITUDE": 35.470042947400003, "LONGITUDE": -97.518683514200006, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -97.520629372787397, 35.471988806036848 ] } }
 ,
@@ -7882,7 +7882,7 @@
 ,
 { "type": "Feature", "id": 3939, "properties": { "NAME": "Dallas", "LATITUDE": 32.820023823100001, "LONGITUDE": -96.840016928899999, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -96.84196278749819, 32.821969681677338 ] } }
 ,
-{ "type": "Feature", "id": 3940, "properties": { "NAME": "Houston", "LATITUDE": 29.819974384599998, "LONGITUDE": -95.339979290499997, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -95.341925149146007, 29.821920243188849 ] } }
+{ "type": "Feature", "id": 3940, "properties": { "NAME": "Houston", "LATITUDE": 29.819974384599998, "LONGITUDE": -95.339979290499997, "brigade": "Y", "Link": null }, "geometry": { "type": "Point", "coordinates": [ -95.341925149146007, 29.821920243188849 ] } }
 ,
 { "type": "Feature", "id": 3941, "properties": { "NAME": "San Antonio", "LATITUDE": 29.487333189899999, "LONGITUDE": -98.507305340399995, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -98.509251198963298, 29.489279048525912 ] } }
 ,
@@ -7902,7 +7902,7 @@
 ,
 { "type": "Feature", "id": 3949, "properties": { "NAME": "San Felipe", "LATITUDE": 10.3359959846, "LONGITUDE": -68.745995516899995, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -68.74599551693457, 10.335995984637336 ] } }
 ,
-{ "type": "Feature", "id": 3950, "properties": { "NAME": "Boston", "LATITUDE": 42.329960143100003, "LONGITUDE": -71.070013673600002, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -71.071959532186852, 42.331906001702293 ] } }
+{ "type": "Feature", "id": 3950, "properties": { "NAME": "Boston", "LATITUDE": 42.329960143100003, "LONGITUDE": -71.070013673600002, "brigade": "Y", "Link": null }, "geometry": { "type": "Point", "coordinates": [ -71.071959532186852, 42.331906001702293 ] } }
 ,
 { "type": "Feature", "id": 3951, "properties": { "NAME": "Concord", "LATITUDE": 43.208071918800002, "LONGITUDE": -71.538047120800002, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -71.538047120841398, 43.208071918809075 ] } }
 ,
@@ -7926,13 +7926,13 @@
 ,
 { "type": "Feature", "id": 3961, "properties": { "NAME": "Tallahassee", "LATITUDE": 30.449987608899999, "LONGITUDE": -84.280034222099999, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -84.28003422212943, 30.449987608862081 ] } }
 ,
-{ "type": "Feature", "id": 3962, "properties": { "NAME": "Orlando", "LATITUDE": 28.509976826, "LONGITUDE": -81.380030356600003, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -81.381976215170781, 28.51192268458993 ] } }
+{ "type": "Feature", "id": 3962, "properties": { "NAME": "Orlando", "LATITUDE": 28.509976826, "LONGITUDE": -81.380030356600003, "brigade": "Y", "Link": null }, "geometry": { "type": "Point", "coordinates": [ -81.381976215170781, 28.51192268458993 ] } }
 ,
 { "type": "Feature", "id": 3963, "properties": { "NAME": "Jacksonville", "LATITUDE": 30.330020771299999, "LONGITUDE": -81.6699868181, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -81.67193267676052, 30.331966629909704 ] } }
 ,
 { "type": "Feature", "id": 3964, "properties": { "NAME": "Tampa", "LATITUDE": 27.946987934399999, "LONGITUDE": -82.458620851399999, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -82.460566709966784, 27.948933792985926 ] } }
 ,
-{ "type": "Feature", "id": 3965, "properties": { "NAME": "Miami", "LATITUDE": 25.787610696400002, "LONGITUDE": -80.224106080799999, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -80.226051939450031, 25.789556555021537 ] } }
+{ "type": "Feature", "id": 3965, "properties": { "NAME": "Miami", "LATITUDE": 25.787610696400002, "LONGITUDE": -80.224106080799999, "brigade": "Y", "Link": null }, "geometry": { "type": "Point", "coordinates": [ -80.226051939450031, 25.789556555021537 ] } }
 ,
 { "type": "Feature", "id": 3966, "properties": { "NAME": "Brunswick", "LATITUDE": 31.1496865021, "LONGITUDE": -81.491651450299997, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -81.491651450308382, 31.149686502094131 ] } }
 ,
@@ -7954,7 +7954,7 @@
 ,
 { "type": "Feature", "id": 3975, "properties": { "NAME": "Peoria", "LATITUDE": 40.699982115700003, "LONGITUDE": -89.6700411395, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -89.670041139468708, 40.699982115739104 ] } }
 ,
-{ "type": "Feature", "id": 3976, "properties": { "NAME": "Chicago", "LATITUDE": 41.829990660699998, "LONGITUDE": -87.750054974099996, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -87.752000832709328, 41.831936519278429 ] } }
+{ "type": "Feature", "id": 3976, "properties": { "NAME": "Chicago", "LATITUDE": 41.829990660699998, "LONGITUDE": -87.750054974099996, "brigade": "Y", "Link": null }, "geometry": { "type": "Point", "coordinates": [ -87.752000832709328, 41.831936519278429 ] } }
 ,
 { "type": "Feature", "id": 3977, "properties": { "NAME": "Evansville", "LATITUDE": 37.974696267699997, "LONGITUDE": -87.555829103299999, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -87.555829103327383, 37.974696267746481 ] } }
 ,
@@ -7968,7 +7968,7 @@
 ,
 { "type": "Feature", "id": 3982, "properties": { "NAME": "Wilmington", "LATITUDE": 34.2255194285, "LONGITUDE": -77.945020387499994, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -77.945020387468588, 34.225519428538853 ] } }
 ,
-{ "type": "Feature", "id": 3983, "properties": { "NAME": "Raleigh", "LATITUDE": 35.8187813507, "LONGITUDE": -78.644693442499999, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -78.644693442484481, 35.818781350745702 ] } }
+{ "type": "Feature", "id": 3983, "properties": { "NAME": "Raleigh", "LATITUDE": 35.8187813507, "LONGITUDE": -78.644693442499999, "brigade": "Y", "Link": null }, "geometry": { "type": "Point", "coordinates": [ -78.644693442484481, 35.818781350745702 ] } }
 ,
 { "type": "Feature", "id": 3984, "properties": { "NAME": "Youngstown", "LATITUDE": 41.099699319499997, "LONGITUDE": -80.649739015400002, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -80.649739015409139, 41.099699319516724 ] } }
 ,
@@ -8004,7 +8004,7 @@
 ,
 { "type": "Feature", "id": 4000, "properties": { "NAME": "Charleston", "LATITUDE": 38.349737975099998, "LONGITUDE": -81.632728110499997, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -81.632728110465195, 38.349737975104787 ] } }
 ,
-{ "type": "Feature", "id": 4001, "properties": { "NAME": "Washington, D.C.", "LATITUDE": 38.899549376499998, "LONGITUDE": -77.009418580800002, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -77.011364439437173, 38.901495235087054 ] } }
+{ "type": "Feature", "id": 4001, "properties": { "NAME": "Washington, D.C.", "LATITUDE": 38.899549376499998, "LONGITUDE": -77.009418580800002, "brigade": "Y", "Link": null }, "geometry": { "type": "Point", "coordinates": [ -77.011364439437173, 38.901495235087054 ] } }
 ,
 { "type": "Feature", "id": 4002, "properties": { "NAME": "Baltimore", "LATITUDE": 39.299990050300003, "LONGITUDE": -76.619984987099997, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -76.621930845685498, 39.301935908916732 ] } }
 ,
@@ -8020,9 +8020,9 @@
 ,
 { "type": "Feature", "id": 4008, "properties": { "NAME": "Harrisburg", "LATITUDE": 40.2735998729, "LONGITUDE": -76.884749187899999, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -76.88474918792015, 40.273599872898842 ] } }
 ,
-{ "type": "Feature", "id": 4009, "properties": { "NAME": "Philadelphia", "LATITUDE": 39.999973163900002, "LONGITUDE": -75.169995973400006, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -75.171941832007931, 40.001919022526465 ] } }
+{ "type": "Feature", "id": 4009, "properties": { "NAME": "Philadelphia", "LATITUDE": 39.999973163900002, "LONGITUDE": -75.169995973400006, "brigade": "Y", "Link": null }, "geometry": { "type": "Point", "coordinates": [ -75.171941832007931, 40.001919022526465 ] } }
 ,
-{ "type": "Feature", "id": 4010, "properties": { "NAME": "Pittsburgh", "LATITUDE": 40.429998595199997, "LONGITUDE": -79.999985394, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -80.001931252600244, 40.431944453843137 ] } }
+{ "type": "Feature", "id": 4010, "properties": { "NAME": "Pittsburgh", "LATITUDE": 40.429998595199997, "LONGITUDE": -79.999985394, "brigade": "Y", "Link": null }, "geometry": { "type": "Point", "coordinates": [ -80.001931252600244, 40.431944453843137 ] } }
 ,
 { "type": "Feature", "id": 4011, "properties": { "NAME": "La Esmeralda", "LATITUDE": 3.17382305797, "LONGITUDE": -65.546604046300004, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -65.546604046273231, 3.17382305797189 ] } }
 ,
@@ -8054,7 +8054,7 @@
 ,
 { "type": "Feature", "id": 4025, "properties": { "NAME": "Sault Ste. Marie", "LATITUDE": 46.495261453300003, "LONGITUDE": -84.345275717899995, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -84.345275717897891, 46.495261453327366 ] } }
 ,
-{ "type": "Feature", "id": 4026, "properties": { "NAME": "Detroit", "LATITUDE": 42.329960143100003, "LONGITUDE": -83.080055787899994, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -83.082001646492714, 42.331906001702293 ] } }
+{ "type": "Feature", "id": 4026, "properties": { "NAME": "Detroit", "LATITUDE": 42.329960143100003, "LONGITUDE": -83.080055787899994, "brigade": "Y", "Link": null }, "geometry": { "type": "Point", "coordinates": [ -83.082001646492714, 42.331906001702293 ] } }
 ,
 { "type": "Feature", "id": 4027, "properties": { "NAME": "Atakpame", "LATITUDE": 7.53004294731, "LONGITUDE": 1.12002437196, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ 1.12002437196218, 7.530042947312159 ] } }
 ,
@@ -8142,7 +8142,7 @@
 ,
 { "type": "Feature", "id": 4069, "properties": { "NAME": "Fairbanks", "LATITUDE": 64.836984272400002, "LONGITUDE": -147.710658612, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -147.710658612031636, 64.836984272411257 ] } }
 ,
-{ "type": "Feature", "id": 4070, "properties": { "NAME": "Anchorage", "LATITUDE": 61.219969908800003, "LONGITUDE": -149.900214885999986, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -149.900214886454364, 61.219969908790027 ] } }
+{ "type": "Feature", "id": 4070, "properties": { "NAME": "Anchorage", "LATITUDE": 61.219969908800003, "LONGITUDE": -149.900214885999986, "brigade": "Y", "Link": null }, "geometry": { "type": "Point", "coordinates": [ -149.900214886454364, 61.219969908790027 ] } }
 ,
 { "type": "Feature", "id": 4071, "properties": { "NAME": "Prudhoe Bay", "LATITUDE": 70.292181009100005, "LONGITUDE": -148.669359784, "brigade": null, "Link": null }, "geometry": { "type": "Point", "coordinates": [ -148.669359783910437, 70.292181009086619 ] } }
 ,
