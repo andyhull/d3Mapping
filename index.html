@@ -24,6 +24,10 @@ var width = 380,
     height = 300,
     centered;
 
+var projection = d3.geo.albersUsa()
+    .scale(width)
+    .translate([width / 2, height / 2]);
+
 var radius = d3.scale.sqrt()
     .domain([0, 1e6])
     .range([0, 10]);
