@@ -50,7 +50,7 @@ console.log(centroid);
       .on("click", click);
   svg.selectAll(".symbol")
       // .data(centroid.features.sort(function(a, b) { return b.properties.population - a.properties.population; }))
-      .data(centroid.features.filter(function(d) { return d.properties.brigade = 'Y'; }))
+      .data(centroid.features.filter(function(d) { return d.properties.brigade == 'Y'; }))
     .enter().append("path")
       .attr("class", "symbol")
       .attr("d", path.pointRadius(10));
