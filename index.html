@@ -92,7 +92,7 @@ d3.json("data/brigade.geojson", function(json) {
       .data(json.features.filter(function(d) { return d.properties.brigade == 'Y'; }))
     .enter().append("path")
       .attr("d", path)
-      .attr("title", function(d,i) { return d.NAME; })
+      .attr("title", function(d,i) { return d.properties.name; })
       .on("click", click)
       .on("mousemove", function(d,i) {
         var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
@@ -100,7 +100,7 @@ d3.json("data/brigade.geojson", function(json) {
         tooltip
           .classed("hidden", false)
           .attr("style", "left:"+(mouse[0]+25)+"px;top:"+mouse[1]+"px")
-          .html(d.name)
+          .html(d.properties.name)
       })
       .on("mouseout",  function(d,i) {
         tooltip.classed("hidden", true)
