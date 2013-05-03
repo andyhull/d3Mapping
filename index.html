@@ -42,12 +42,12 @@ var g = svg.append("g")
     .attr("id", "states");
 
 function ready(error, us, centroid) {
+console.log(centroid);
   svg.append("path")
       .attr("class", "states")
       .datum(topojson.object(us, us.objects.states))
       .attr("d", path)
       .on("click", click);
-console.log(centroid);
   svg.selectAll(".symbol")
       .data(centroid.features.sort(function(a, b) { return b.properties.population - a.properties.population; }))
       // .data(centroid.features.filter(function(d) { return d.properties.brigade = 'Y'; }) 
