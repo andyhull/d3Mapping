@@ -75,6 +75,7 @@ d3.json("data/brigade.geojson", function(json) {
       .data(json.features.filter(function(d) { return d.properties.brigade == 'Y'; }))
     .enter().append("path")
       .attr("d", path)
+      .attr("title", function(d,i) { return d.NAME; })
       .on("click", click);
 });
 
