@@ -23,6 +23,20 @@
   stroke: #fff;
 }
 
+.hidden { 
+  display: none; 
+}
+div.tooltip {
+  color: #222; 
+  background: #fff; 
+  padding: .5em; 
+  text-shadow: #f5f5f5 0 1px 0;
+  border-radius: 2px; 
+  box-shadow: 0px 0px 2px 0px #a6a6a6; 
+  opacity: 0.9; 
+  position: absolute;
+}
+
 </style>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -76,8 +90,20 @@ d3.json("data/brigade.geojson", function(json) {
     .enter().append("path")
       .attr("d", path)
       .attr("title", function(d,i) { return d.NAME; })
-      .on("click", click);
+      .on("click", click)
+      .on("mousemove", function(d,i) {
+        var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
+
+        tooltip
+          .classed("hidden", false)
+          .attr("style", "left:"+(mouse[0]+25)+"px;top:"+mouse[1]+"px")
+          .html(d.name)
+      })
+      .on("mouseout",  function(d,i) {
+        tooltip.classed("hidden", true)
+      });
 });
+
 
 function click(d) {
   var centroid = path.centroid(d),
