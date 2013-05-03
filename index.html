@@ -49,6 +49,7 @@ function ready(error, us, centroid) {
       .on("click", click);
 
   svg.selectAll(".symbol")
+  console.log(centroid);
       .data(centroid.features.filter(function(d) { return d.properties.brigade = 'Y'; }) 
     .enter().append("path")
       .attr("class", "symbol")
