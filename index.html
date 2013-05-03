@@ -38,6 +38,8 @@ queue()
     .defer(d3.json, "data/us.json")
     .defer(d3.json, "data/us-state-centroids.json")
     .await(ready);
+var g = svg.append("g")
+    .attr("id", "states");
 
 function ready(error, us, centroid) {
   svg.append("path")
