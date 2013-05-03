@@ -80,7 +80,7 @@ function click(d) {
 
   zoom.translate(projection.translate());
 
-  states.selectAll("path").transition()
+  svg.selectAll("path").transition()
       .duration(1000)
       .attr("d", path);
 }
