@@ -92,11 +92,15 @@ function click(d) {
   states.selectAll("path").transition()
       .duration(1000)
       .attr("d", path);
+  cities.selectAll("path").transition()
+      .duration(1000)
+      .attr("d", path);
 }
 
 function zoom() {
   projection.translate(d3.event.translate).scale(d3.event.scale);
   states.selectAll("path").attr("d", path);
+  cities.selectAll("path").attr("d", path);
 }
 
 </script>
