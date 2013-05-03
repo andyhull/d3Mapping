@@ -30,6 +30,12 @@ var radius = d3.scale.sqrt()
 
 var path = d3.geo.path();
 
+var zoom = d3.behavior.zoom()
+    .translate(projection.translate())
+    .scale(projection.scale())
+    .scaleExtent([height, 8 * height])
+    .on("zoom", zoom);
+
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
@@ -58,29 +64,26 @@ var g = svg.append("g")
       .attr("class", "symbol")
       .attr("d", path.pointRadius(10));
 }
+
 function click(d) {
-  var x, y, k;
+  var centroid = path.centroid(d),
+      translate = projection.translate();
 
-  if (d && centered !== d) {
-    var centroid = path.centroid(d);
-    x = centroid[0];
-    y = centroid[1];
-    k = 4;
-    centered = d;
-  } else {
-    x = width / 2;
-    y = height / 2;
-    k = 1;
-    centered = null;
-  }
+  projection.translate([
+    translate[0] - centroid[0] + width / 2,
+    translate[1] - centroid[1] + height / 2
+  ]);
 
-  g.selectAll("path")
-      .classed("active", centered && function(d) { return d === centered; });
+  zoom.translate(projection.translate());
 
-  g.transition()
+  states.selectAll("path").transition()
       .duration(1000)
-      .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
-      .style("stroke-width", 1.5 / k + "px");
+      .attr("d", path);
+}
+
+function zoom() {
+  projection.translate(d3.event.translate).scale(d3.event.scale);
+  states.selectAll("path").attr("d", path);
 }
 
 </script>
