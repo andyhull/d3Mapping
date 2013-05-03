@@ -54,6 +54,9 @@ var projection = d3.geo.albersUsa()
 var path = d3.geo.path()
     .projection(projection);
 
+var tooltip = d3.select("body").append("div")
+    .attr("class", "tooltip");
+
 var zoom = d3.behavior.zoom()
     .translate(projection.translate())
     .scale(projection.scale())
