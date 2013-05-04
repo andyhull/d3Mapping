@@ -102,7 +102,6 @@ d3.json("data/brigade.geojson", function(json) {
           .attr("style", "left:"+(mouse[0]+25)+"px;top:"+mouse[1]+"px")
           .html(d.properties.NAME)
         })
-      })
       .on("mousemove", function(d,i) {
         var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
 
